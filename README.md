@@ -13,23 +13,26 @@ Required:
 
 ```bash
 # init project
+$ git clone https://github.com/Dpezz/test_2x3global.git
+$ cd test_2x3global
 $ composer install
 $ cp .env.example .env
-$ php artisan generate:key
+$ php artisan key:generate
 
 # make migration and seeders
+$ configure database .env
 $ php artisan migrate
 $ php artisan db:seed
 
-# up server at localhost:8000
-$ php artisan server
-
-# listen job localhost:8000
-$ php artisan job:work
-
-# others configurations
+# others configurations .env
 $ QUEUE_CONNECTION=database
 $ MAIL_HOST=smtp.mailtrap.io
+
+# up server at localhost:8000
+$ php artisan serve
+
+# listen job localhost:8000
+$ php artisan queue:work
 
 ```
 
