@@ -6,8 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Payment extends Model
 {
-    // use \App\Models\Concerns\UsesUuid;
-    use \App\Models\Traits\UuidTrait;
+    use \App\Models\Concerns\UsesUuid;
     
     /**
      * The attributes that are mass assignable.
@@ -15,7 +14,7 @@ class Payment extends Model
      * @var array
      */
     protected $fillable = [
-		  'id', 'payment_date', 'expires_at', 'status', 'client_id', 'clp_usd'
+		'id', 'payment_date', 'expires_at', 'status', 'client_id', 'clp_usd'
     ];
 
     /**

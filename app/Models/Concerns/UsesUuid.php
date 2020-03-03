@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Models\Traits;
+namespace App\Models\Concerns;
 
 use Illuminate\Support\Str;
 
-trait UuidTrait
+trait UsesUuid
 {
     protected static function bootUsesUuid()
     {
