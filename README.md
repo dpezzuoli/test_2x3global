@@ -27,6 +27,7 @@ $ php artisan db:seed
 # others configurations .env
 $ QUEUE_CONNECTION=database
 $ MAIL_HOST=smtp.mailtrap.io
+$ configure mailtrap .env
 
 # up server at localhost:8000
 $ php artisan serve
